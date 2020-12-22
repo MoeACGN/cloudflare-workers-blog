@@ -1,25 +1,25 @@
-> 这是一个运行在cloudflare workers 上的博客程序,使用 cloudflare KV作为数据库,无其他依赖.
-兼容静态博客的速度,以及动态博客的灵活性,方便搭建不折腾.
-演示地址: [https://blog.gezhong.vip](https://blog.gezhong.vip "cf-blog演示站点")
+﻿> 這是一個執行在cloudflare workers 上的部落格程式,使用 cloudflare KV作為資料庫,無其他依賴.
+相容靜態部落格的速度,以及動態部落格的靈活性,方便搭建不折騰.
+示範地址: [https://blog.gezhong.vip](https://blog.gezhong.vip "cf-blog示範站點")
 
-# 主要特点
-* 使用workers提供的KV作为数据库
-* 使用cloudflare缓存html来降低KV的读写
-* 所有html页面均为缓存,可达到静态博客的速度
-* 使用KV作为数据库,可达到wordpress的灵活性
-* 后台使用markdown语法,方便快捷
-* 一键发布(页面重构+缓存清理)
+# 主要特點
+* 使用workers提供的KV作為資料庫
+* 使用cloudflare快取html來降低KV的讀寫
+* 所有html頁面均為快取,可達到靜態部落格的速度
+* 使用KV作為資料庫,可達到wordpress的靈活性
+* 後台使用markdown語法,方便快捷
+* 一鍵發布(頁面重構+快取清理)
 
-# 承载能力
- * KV基本不存在瓶颈,因为使用了缓存,读写很少
- * 唯一瓶颈是 workers的日访问量10w,大约能承受2万IP /日
- * 文章数:1G存储空间,几万篇问题不大
+# 承載能力
+ * KV基本上不存在瓶頸,因為使用了快取,讀寫很少
+ * 唯一瓶頸是 workers的日訪問量10w,大約能承受2萬IP /日
+ * 文章數:1G儲存空間,幾萬篇問題不大
 
-# 部署步骤
-  这里没有实时预览真难受,一系列坑会慢慢填到博客,敬请关注 [https://blog.gezhong.vip](https://blog.gezhong.vip "")
+# 部署步驟
+  這裡沒有即時預覽真難受,一系列坑會慢慢填到部落格,敬請關注 [https://blog.gezhong.vip](https://blog.gezhong.vip "")
 
-### 前端演示:[https://blog.gezhong.vip](https://blog.gezhong.vip "演示站点")
+### 前端示範:[https://blog.gezhong.vip](https://blog.gezhong.vip "示範站點")
 ![](https://s3.ax1x.com/2020/12/22/rrP81S.png)
 
-### 后端演示:
+### 後端示範:
 ![](https://s3.ax1x.com/2020/12/22/rrAWrD.png)

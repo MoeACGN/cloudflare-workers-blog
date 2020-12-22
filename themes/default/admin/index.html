@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>CF-blog后台</title>
+	<title>CF-blog後台</title>
     <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/gdtool/zhaopp/cfblog/favicon.ico" />
 	<link rel="shortcut icon" type="image/x-icon"  href="https://cdn.jsdelivr.net/gh/gdtool/zhaopp/cfblog/favicon.ico"/>
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
@@ -32,13 +32,13 @@
 				<a href="#list" data-toggle="tab">我的文章</a>
 			</li>
 			<li class="active">
-				<a href="#new" data-toggle="tab">新建</a>
+				<a href="#new" data-toggle="tab">建立</a>
 			</li>
 			<li>
-				<a href="#config" data-toggle="tab">设置</a>
+				<a href="#config" data-toggle="tab">設定</a>
 			</li>
 			<li>
-				<a href="#" data-toggle="tab" onclick="publish()">发布</a>
+				<a href="#" data-toggle="tab" onclick="publish()">發布</a>
 			</li>
 		</ul>
 	</div>
@@ -48,10 +48,10 @@
 	<div class="tab-pane fade" id="list">
 		<div class="container" >
 			<table class="table  table-striped" id="articleList">
-				  <tr><td>ID</td><td>标题</td><td>创建日期</td></tr>
+				  <tr><td>ID</td><td>標題</td><td>建立日期</td></tr>
 			</table>
 			<input type="hidden"  name="page" id="page" value='1'>
-			<a id="loadmore" class="btn btn-default">加载更多...</a>
+			<a id="loadmore" class="btn btn-default">載入更多...</a>
 		</div> 
 	</div>
 	<div class="tab-pane fade in active" id="new">
@@ -60,30 +60,30 @@
 			<form id="addNewForm"  class="form-inline" >
 				<div class="form-group" style="width: 98%">
 					<input type="hidden" class="form-control" name="id" id="id" >
-					<input type="text" class="form-control" name="title" id="title" placeholder="标题" style="width: 100%;" required="true">
+					<input type="text" class="form-control" name="title" id="title" placeholder="標題" style="width: 100%;" required="true">
 				</div>
 				<div class="form-group">
-					<label for="exampleInputEmail2">特色图片</label>
+					<label for="exampleInputEmail2">特色圖片</label>
 					<input type="url" class="form-control" style="width: 400px;"  name="img" id="img" placeholder="" >
 				</div>
 				<div class="form-group">
-					<label for="exampleInputEmail2">永久链接</label>
+					<label for="exampleInputEmail2">永久連結</label>
 					<input type="text" class="form-control" name="link" id="link" placeholder="" required="true">
 				</div>
 				<div class="form-group">
-					<label for="exampleInputEmail2">创建日期</label>
+					<label for="exampleInputEmail2">建立日期</label>
 					<input type="datetime-local" class="form-control" id="createDate" name="createDate" placeholder=""  required="true">
 				</div>
 				<div class="form-group">
-					<label for="exampleInputEmail2">分类</label>
+					<label for="exampleInputEmail2">分類</label>
 					<select class="selectpicker" multiple name="category[]" id="category">
 					</select>
 				</div>
 				<div class="form-group">
-					<label for="exampleInputEmail2">标签</label>
-					<input type="text" class="form-control" name="tags" id="tags" placeholder="标签1,标签2">
+					<label for="exampleInputEmail2">標籤</label>
+					<input type="text" class="form-control" name="tags" id="tags" placeholder="標籤1,標籤2">
 				</div>
-					<a  tabindex="0"  role="button"  type="submit" id="btn_saveAddNew" class="btn btn-default" onclick="saveAddNew()">保存</a>
+					<a  tabindex="0"  role="button"  type="submit" id="btn_saveAddNew" class="btn btn-default" onclick="saveAddNew()">儲存</a>
 					
 				<div id="content"><textarea style="display:none;"></textarea></div>
 			</form>
@@ -95,18 +95,18 @@
 		<div class="container" >
 			<form id="configForm" role="form" >
 				<div class="form-group">
-				    <label for="name">分类,例:<code>["类别A","类别B","类别C","类别D"]</code></label>
-					<textarea class="form-control" id="WidgetCategory" name="WidgetCategory" rows="3" placeholder='["分类A","分类B"]'></textarea>
+				    <label for="name">分類,例:<code>["類別A","類別B","類別C","類別D"]</code></label>
+					<textarea class="form-control" id="WidgetCategory" name="WidgetCategory" rows="3" placeholder='["分類A","分類B"]'></textarea>
 				</div>
 	
 				<div class="form-group">
-				    <label for="name">菜单,例:<code>[{"title":"技术文章","url":"/category/技术文章"},{"title":"管理","url":"/admin"}]</code></label>
+				    <label for="name">選單,例:<code>[{"title":"技術文章","url":"/category/技術文章"},{"title":"管理","url":"/admin"}]</code></label>
 					<textarea class="form-control" id="WidgetMenu" name="WidgetMenu" rows="10"  placeholder='[
-	{"title":"菜单A"	,"url":"/category/菜单A"},
-	{"title":"菜单B"	,"url":"/category/菜单B"}
+	{"title":"選單A"	,"url":"/category/選單A"},
+	{"title":"選單B"	,"url":"/category/選單B"}
 ]'></textarea>
 				</div>
-				<a  tabindex="0"  role="button"  type="submit" id="btn_saveConfig" class="btn btn-default" onclick="saveConfig()">保存</a>
+				<a  tabindex="0"  role="button"  type="submit" id="btn_saveConfig" class="btn btn-default" onclick="saveConfig()">儲存</a>
 			</form>
 			
 			
@@ -118,9 +118,9 @@
 <script type="text/javascript">
 	$(function() {
 		$('#myTab li:eq(0) 1').tab('show');
-		//获取分类
+		//獲取分類
 		var categoryJson = <!--{categoryJson}-->;
-		//获取菜单
+		//獲取選單
 		var menuJson = <!--{menuJson}-->;
 		var mdEditor = editormd("content", {
 				// width  : "90%",
@@ -130,7 +130,7 @@
 				saveHTMLToTextarea : true,
 				mode : "markdown"
 			});
-		//表单赋值
+		//表單賦值
 		$('#createDate').val(new Date());
 		
 		$('#WidgetCategory').val(JSON.stringify(categoryJson));
@@ -140,9 +140,9 @@
 		for (var i = 0; i < categoryJson.length; i++) {
 			category.append('<option id=' + categoryJson[i] + ' value=' + categoryJson[i] + '>' + categoryJson[i] + '</option>');
 		}
-		$("#loadmore").click();//初始加载一页
+		$("#loadmore").click();//初始載入一頁
 	});
-    //加载文章列表	
+    //載入文章列表	
     $("#loadmore").click(function(){
         var page=$("#page").val();
         $.ajax({
@@ -165,7 +165,7 @@
             }
         });
     })
-    //新建文章
+    //建立文章
     function saveAddNew(){
         if(
             $('#WidgetMenu').val() == "" || $('#WidgetMenu').val() == null
@@ -173,7 +173,7 @@
             || $('#createDate').val() == "" || $('#createDate').val() == null
         
         ){
-           alert("信息不全");
+           alert("訊息不全");
            return;
             
         }
@@ -189,26 +189,26 @@
             success: function (result) {
                 if ("id" in result){
                     $('#id').val(result.id);
-					$('#labelNew').text("编辑:"+result.id);
+					$('#labelNew').text("編輯:"+result.id);
                     alert(result.msg);
                 }
                 else 
                 {
-					alert("失败");
+					alert("失敗");
 				}
             }
         });
     }
-    //保存设置
+    //儲存設定
     function saveConfig(){
         if(!isJSON($('#WidgetCategory').val()))
         {
-            alert("分类格式错误"); 
+            alert("分類格式錯誤"); 
             return false;
         }
         if(!isJSON($('#WidgetMenu').val()))
         {
-            alert("菜单格式错误"); 
+            alert("選單格式錯誤"); 
             return false;
         }
         $.ajax({
@@ -222,9 +222,9 @@
             }
         });
     }
-    //发布
+    //發布
     function publish(){
-        if (confirm("确定吗?发布将清理所有静态缓存,重新生成")==false){ 
+        if (confirm("確定嗎?發布將清理所有靜態快取,重新生成")==false){ 
             return false; 
           }
         $.ajax({
