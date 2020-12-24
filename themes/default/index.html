@@ -14,8 +14,8 @@
   <link rel="profile" href="http://gmpg.org/xfn/11" /> 
   <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/gdtool/zhaopp/cfblog/favicon.ico" />
   <link rel="Shortcut Icon" href="https://cdn.jsdelivr.net/gh/gdtool/zhaopp/cfblog/favicon.ico">
-  <title><!--{opt.siteName}--></title> 
-  <meta name="keywords" content="<!--{opt.keyWords}--> />
+  <title><!--{title}--></title> 
+  <meta name="keywords" content="<!--{opt.keyWords}-->" />
   <meta name="description" content="<!--{opt.siteDescription}-->" />
   <link rel="dns-prefetch" href="//fonts.googleapis.com" /> 
   <link rel="dns-prefetch" href="//s.w.org" /> 
@@ -73,6 +73,8 @@ img.emoji {
 		border: 1px solid #16a1e7 !important;
 	}
 }		</style> 
+<link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.3.2/styles/tomorrow-night-bright.min.css">
+<script src='https://cdn.staticfile.org/highlight.js/10.3.2/highlight.min.js'></script>
 <!--{opt.codeBeforHead}-->
 
  </head> 
@@ -103,6 +105,8 @@ img.emoji {
      <!--{widgetCategory.html}-->
 
      <!--{widgetTags.html}-->
+	 
+	 <!--{opt.widgetOther}-->
 	<aside id="meta-2" class="widget widget_meta"><p class="widget-title">連結</p>
 		<ul>
 			<li><a href="/admin/">管理站點</a></li>
@@ -123,6 +127,9 @@ img.emoji {
   <script type="text/javascript" src="https://cdn.jsdelivr.net/wp/themes/iconic-one/2.1.8/js/selectnav.min.js?ver=1.0" id="themonic-mobile-navigation-js"></script> 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/WordPress/WordPress@5.6/wp-includes/js/clipboard.min.js?ver=5.6" id="clipboard-js"></script> 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/gdtool/zhaopp/cfblog/wp-embed.min.js?ver=5.6" id="wp-embed-js"></script> 
+	<script>
+		hljs.initHighlightingOnLoad();//程式碼突顯
+	</script>
 <!--{opt.codeBeforBody}-->
 	</body>
 </html>

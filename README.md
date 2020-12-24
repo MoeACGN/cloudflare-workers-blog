@@ -2,6 +2,7 @@
 相容靜態部落格的速度,以及動態部落格的靈活性,方便搭建不折騰.
 示範地址: [https://blog.gezhong.vip](https://blog.gezhong.vip "cf-blog示範站點")
 
+### TG 討論群: [@CloudflareBlog](https://t.me/cloudflareblog "")
 # 主要特點
 * 使用workers提供的KV作為資料庫
 * 使用cloudflare快取html來降低KV的讀寫
@@ -17,6 +18,17 @@
 
 # 部署步驟
   這裡沒有即時預覽真難受,一系列坑會慢慢填到部落格,敬請關注 [https://blog.gezhong.vip](https://blog.gezhong.vip "")
+
+# 更新日誌
+
+> [持續更新地址https://blog.gezhong.vip/article/009000/update-log.html](https://blog.gezhong.vip/article/009000/update-log.html "更新日誌")
+  
+## 最近更新(12-24)
+
+ 本次更新,主要針對seo和閱讀次數,以及多項細節最佳化
+
+
+
 
 ### 前端示範:[https://blog.gezhong.vip](https://blog.gezhong.vip "示範站點")
 ![](https://s3.ax1x.com/2020/12/22/rrP81S.png)
