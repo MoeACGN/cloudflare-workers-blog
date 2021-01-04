@@ -23,9 +23,9 @@
 
 > [持續更新地址https://blog.gezhong.vip/article/009000/update-log.html](https://blog.gezhong.vip/article/009000/update-log.html "更新日誌")
   
-## 最近更新(12-24)
-
- 本次更新,主要針對seo和閱讀次數,以及多項細節最佳化
+## 最近更新(2020-12-31)
+* 2020-12-31:加入sitemap.xml
+* 2020-12-24:本次更新,主要針對seo和閱讀次數,以及多項細節最佳化
 
 
 
@@ -35,3 +35,7 @@
 
 ### 後端示範:
 ![](https://s3.ax1x.com/2020/12/22/rrAWrD.png)
+
+## 捐贈
+
+如果你覺得本項目幫到你了，還請資持一下原作者[gdtool/cloudflare-workers-blog](https://github.com/gdtool/cloudflare-workers-blog "")
