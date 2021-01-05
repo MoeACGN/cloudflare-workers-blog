@@ -38,4 +38,4 @@
 
 ## 捐贈
 
-如果你覺得本項目幫到你了，還請資持一下原作者[gdtool/cloudflare-workers-blog](https://github.com/gdtool/cloudflare-workers-blog "")
+如果你覺得本項目幫到你了，還請支持一下原作者[gdtool/cloudflare-workers-blog](https://github.com/gdtool/cloudflare-workers-blog "")
